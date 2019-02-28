@@ -1,0 +1,3 @@
+color:595959
+seletedColor:1c1b21
+borderStyle:white

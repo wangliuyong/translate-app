@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <view class="change">
+    <navigator class="nav-container" target="" url="/pages/change/change" hover-class="navigator-hover" open-type="navigate">
+      <block>
+        <text class="lan-text">到{{lan}}</text>
+        <text class="iconfont icon-down"></text>
+      </block>    
+    </navigator> 
+  </view>
+  <view class="input-area">
+    <textarea class="input-text" placeholder="请输入要翻译字" placeholder-class="placeholder-style" id="" cols="30" rows="10" bindinput="onInput"></textarea>
+    <text class="iconfont "></text>
+  </view>
+  <view class="copyright"></view>
+</view>
