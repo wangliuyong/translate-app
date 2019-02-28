@@ -19,8 +19,14 @@
     </navigator> 
   </view>
   <view class="input-area">
-    <textarea class="input-text" placeholder="请输入要翻译字" placeholder-class="placeholder-style" id="" cols="30" rows="10" bindinput="onInput"></textarea>
+    <textarea class="input-text" bindblur="onConfirm" bindconfirm="onConfirm" bindinput="onInput" value="{{query}}" placeholder="请输入要翻译字" placeholder-class="placeholder-style" id="" cols="30" rows="10" ></textarea>
     <text class="iconfont "></text>
   </view>
-  <view class="copyright"></view>
+  <view class="text-area">
+    <view class="title">译文</view>
+    <view class="text-result" wx:for="{{result}}" wx:key="index">
+      <text class="" selectable="true">{{item.dst}}</text>
+    </view>
+  </view>
+  <view class="copyright">@2019 王刘永</view>
 </view>

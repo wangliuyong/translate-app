@@ -32,10 +32,12 @@
 
 .input-area{
   border-bottom: 1px solid #cccccc;
+  
 }
 
 .input-text{
   border: 1px solid red;
+  padding:10rpx;
 }
 
 

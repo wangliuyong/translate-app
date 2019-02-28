@@ -9,7 +9,9 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     lan:'语言',
-    inputText:''
+    inputText:'',
+    query:'',
+    result:[]
   },
   //事件处理函数
   bindViewTap: function() {
@@ -65,7 +67,9 @@ Page({
       inputText:e.detail.value
     })
     console.log('data',this.data.inputText)
-  }
+  },
+  onConfirm(e){}
+
   //封装的函数
   
 })
