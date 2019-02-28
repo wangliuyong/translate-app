@@ -1,28 +1,30 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/change/change"
+    "pages/change/change",
+    "pages/history/history"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#ccc",
-    "navigationBarTitleText": "首页",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1c1b21",
+    "navigationBarTitleText": "袁静的翻译",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "red"
   },
   "tabBar": {
+    "borderStyle": "white",
+    "position": "top",
+    "color": "#595959",
+    "selectedColor": "#1c1b21",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "翻译"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/history/history",
         "text": "历史"
       }
-    ],
-    "position":"top",
-    "color":"#595959",
-    "selectedColor":"#1c1b21"
+    ]
   }
 }

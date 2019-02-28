@@ -1,16 +1,19 @@
-//index.js
-//获取应用实例
+//logs.js
+const util = require('../../utils/util.js')
 const app = getApp()
-
 Page({
-    data: {
-        motto: 'Hello World',
-        userInfo: {},
-        hasUserInfo: false,
-        canIUse: wx.canIUse('button.open-type.getUserInfo')
-    },
-
-    onLoad: function () {
-
-    }
+  data: {
+    curLang: {},
+    langList: app.globalData.langList
+  },
+  onShow: function () {
+    this.setData({ curLang: app.globalData.curLang })
+  },
+  onTapItem: function(e) {
+    let langObj = e.currentTarget.dataset
+    wx.setStorageSync('language', langObj)
+    this.setData({'curLang': langObj})
+    app.globalData.curLang = langObj
+    wx.switchTab({ url: '/pages/index/index'})
+  }
 })

@@ -1,48 +1,56 @@
 /**index.wxss**/
-.userinfo {
+
+.change {
+  color: #8995a1;
+  font-size: 24rpx;
+  padding: 20rpx 40rpx;
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.change .icon-right {
+  color: #888;
 }
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-}
-
-.nav-container{
-  padding-left: 40rpx;
-  background: rgba(100, 200, 100, 0.5);
-}
-
-.lan-text{
-  font-size: 30rpx;
-  color: red;
-}
-
-.input-area{
-  border-bottom: 1px solid #cccccc;
-  
-}
-
-.input-text{
-  border: 1px solid red;
-  padding:10rpx;
-}
-
-
-.placeholder-style{
+.change .icon-down {
   color: #8995a1;
-  font-size :25rpx;
+  font-size: 20rpx;
 }
+
+.input-area {
+  position: relative;
+}
+.textarea-wrap {
+  background: #fff;
+  border-bottom: 1px solid #c7cee0;
+}
+.input-area textarea {
+  background-color: #fff;
+  padding: 30rpx 0 30rpx 30rpx;
+  width: calc(100% - 48rpx);
+  margin: 0;
+  box-sizing: border-box;
+}
+.input-area .icon-close {
+  position: absolute;
+  right: 12rpx;
+  top: 20rpx;
+  z-index: 100;
+  font-size: 40rpx;
+  color: #888;
+}
+
+.input-area .text-area {
+  min-height: 80rpx;
+  padding: 40rpx;
+  background-color: #fff;
+}
+
+.input-area .text-title {
+  font-size: 28rpx;
+  color: #8995a1;
+}
+
+.input-area .text-result {
+  padding: 20rpx 0;
+}
+
 
